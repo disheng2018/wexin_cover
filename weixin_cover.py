@@ -2,7 +2,7 @@
 # @Author: zhang zicheng
 # @Date:   2024-06-24 12:11:38
 # @Last Modified by:   zhang zicheng
-# @Last Modified time: 2024-06-24 12:28:59
+# @Last Modified time: 2024-06-24 12:34:38
 import requests
 import re
 import streamlit as st
@@ -21,7 +21,7 @@ if st.button('提交'):
             # print(response.text)
 
             source_code = response.text
-            url_pattern = re.compile(r'cdn_url_1_1 = "(.*?)"')
+            url_pattern = re.compile(r'msg_cdn_url = "(.*?)"')
             matches = url_pattern.findall(source_code)
             if matches:
                 st.write(f"封面链接（请点击链接打开或保存）：\n{matches[0]}")
