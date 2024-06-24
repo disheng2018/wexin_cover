@@ -2,13 +2,13 @@
 # @Author: zhang zicheng
 # @Date:   2024-06-24 12:11:38
 # @Last Modified by:   zhang zicheng
-# @Last Modified time: 2024-06-24 12:23:06
+# @Last Modified time: 2024-06-24 12:28:59
 import requests
 import re
 import streamlit as st
 
 st.title('公众号封面提取')
-st.subheader("【基于Streamlit搭建】")
+st.subheader("WeChat Official Account Cover Extraction【based on Streamlit】")
 
 # url = 'https://mp.weixin.qq.com/s/d7DUHB-hT8DExjpxsEncQw'
 url = st.text_input('请输入公众号文章链接：')
